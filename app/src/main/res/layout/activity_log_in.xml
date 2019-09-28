@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity"
+    android:background="@drawable/back"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="150dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="افهمهاو عيشها"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="120dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="70dp">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mail_login_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:hint="البريد الالكتروني"
+            app:met_floatingLabel="normal" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:hint="كلمة السر"
+                android:inputType="textPassword"
+                android:maxLength="6"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="هل نسيت كلمة السر؟"
+            android:textColor="@color/orange" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:text="تسجيل الدخول"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
