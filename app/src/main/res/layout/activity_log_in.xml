@@ -24,6 +24,7 @@
         android:textColor="@color/white"
         android:layout_marginTop="260dp"
         android:layout_marginLeft="120dp"
+        android:gravity="center"
         />
 
     <LinearLayout
@@ -74,6 +75,7 @@
             android:textColor="@color/orange" />
 
         <Button
+            android:id="@+id/login_Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/button_shape"
