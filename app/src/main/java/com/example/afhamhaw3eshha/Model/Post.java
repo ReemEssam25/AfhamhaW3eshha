@@ -8,10 +8,17 @@ public class Post {
     private String article;
     private String category ;
    // private String userID;
-    private int likes;
+    private String likes;
 
+    public Post(){
 
-    public Post(String title, String img, String article, String category, int likes , String userID) {
+    }
+
+    public Post(String title , String article){
+        this.title = title;
+        this.article = article;
+    }
+    public Post(String title, String img, String article, String category, String likes , String userID) {
         this.title = title;
         this.img = img;
         this.article = article;
@@ -60,11 +67,11 @@ public class Post {
         this.article = article;
     }
 
-    public int getLikes() {
+    public String getLikes() {
         return likes;
     }
 
-    public void setLikes(int likes) {
+    public void setLikes(String likes) {
         this.likes = likes;
     }
 }

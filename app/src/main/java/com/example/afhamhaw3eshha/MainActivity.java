@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
+import com.example.afhamhaw3eshha.Fragments.ArticleFragment;
 import com.example.afhamhaw3eshha.Fragments.WriteFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         fM = getSupportFragmentManager();
         fT = fM.beginTransaction();
-        frag = new WriteFragment();
+        frag = new ArticleFragment();
         fT.replace(R.id.container, frag , "any tag");
         fT.commit();
 
