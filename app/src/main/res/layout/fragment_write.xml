@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.WriteFragment"
+    android:background="@drawable/article_shape"
+    android:padding="30dp"
+    android:layout_margin="20dp"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="عنوان المقالة"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:id="@+id/title_EditText"
+        android:background="@drawable/edittext_shape"
+        android:padding="10dp"
+        />
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:id="@+id/img"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_shape"
+        android:id="@+id/article_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:hint="المقالة...."
+        android:textColorHint="#000"
+        android:padding="20dp"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:text="اضافة مقال"
+        android:id="@+id/add_Button"
+        android:padding="10dp"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/article_shape"
+    android:padding="30dp"
+    android:layout_margin="50dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/user_img"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اسم المستخدم"
+                android:layout_toLeftOf="@id/user_img"
+                android:layout_marginRight="20dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:id="@+id/userName_TextView"
+                android:textSize="15dp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:id="@+id/title_TextText"
+        android:background="@drawable/edittext_shape"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/img"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:background="@drawable/edittext_shape"
+        android:id="@+id/article_TextText"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:textColorHint="#000"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:background="@drawable/edittext_shape"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/like_Button"
+            android:background="@drawable/like"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/comment_Button"
+            android:background="@drawable/ic_comment_black_24dp"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/see_Button"
+            android:background="@drawable/ic_remove_red_eye_black_24dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
