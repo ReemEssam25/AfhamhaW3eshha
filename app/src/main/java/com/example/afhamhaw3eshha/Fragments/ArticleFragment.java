@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.afhamhaw3eshha.Adapter.ArticleAdapter;
 import com.example.afhamhaw3eshha.Model.Post;
@@ -46,7 +47,7 @@ public class ArticleFragment extends Fragment {
 
         recyclerView = v.findViewById(R.id.article_RecycleView);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
 
         posts = new ArrayList<>();
         readArticles();
@@ -69,7 +70,9 @@ public class ArticleFragment extends Fragment {
                     assert post2!= null;
                     posts.add(post2);
                 }
+                Toast.makeText(getActivity(), ""+posts.size(), Toast.LENGTH_SHORT).show();
                 adapter = new ArticleAdapter(posts , getContext());
+                recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
                 recyclerView.setAdapter(adapter);
 
             }
