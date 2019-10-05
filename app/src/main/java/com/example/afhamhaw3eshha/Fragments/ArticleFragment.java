@@ -70,7 +70,6 @@ public class ArticleFragment extends Fragment {
                     assert post2!= null;
                     posts.add(post2);
                 }
-                Toast.makeText(getActivity(), ""+posts.size(), Toast.LENGTH_SHORT).show();
                 adapter = new ArticleAdapter(posts , getContext());
                 recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
                 recyclerView.setAdapter(adapter);

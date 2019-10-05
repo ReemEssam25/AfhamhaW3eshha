@@ -15,23 +15,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.afhamhaw3eshha.Fragments.Ala_ElAsl_Dwar;
-import com.example.afhamhaw3eshha.Fragments.AntaWMzagk;
 import com.example.afhamhaw3eshha.Fragments.ArticleFragment;
-import com.example.afhamhaw3eshha.Fragments.E5tlaf_Mesh_5laf;
-import com.example.afhamhaw3eshha.Fragments.ElKol;
-import com.example.afhamhaw3eshha.Fragments.Esm3_8erak;
-import com.example.afhamhaw3eshha.Fragments.Hwar_El3dd;
-import com.example.afhamhaw3eshha.Fragments.Mlf_El3dd;
-import com.example.afhamhaw3eshha.Fragments.Ro2a;
 import com.example.afhamhaw3eshha.Fragments.WriteFragment;
-import com.example.afhamhaw3eshha.Fragments.Z2zo2ah;
-import com.example.afhamhaw3eshha.Fragments.anta7or;
-import com.example.afhamhaw3eshha.Fragments.hapinessCapsols;
-import com.example.afhamhaw3eshha.Fragments.hun;
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity  {
 
     FragmentManager fM;
     FragmentTransaction fT;
@@ -96,7 +84,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
 
 
         }
@@ -111,47 +98,4 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 }
 
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        switch(menuItem.getItemId()){
-            case R.id.كبسولات_السعادة:
-                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,new hapinessCapsols()).commit();
-                break;
-            case R.id.انت_حر:
-                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,new anta7or()).commit();
-                break;
-            case R.id.هن:
-                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,new hun()).commit();
-                break;
-            case R.id.انت_ومزاجك:
-                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,new AntaWMzagk()).commit();
-                break;
-            case R.id.اسمع_غيرك:
-                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,new Esm3_8erak()).commit();
-                break;
-            case R.id.اختلاف_مش_خلاف:
-                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,new E5tlaf_Mesh_5laf()).commit();
-                break;
-            case R.id.رؤى:
-                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,new Ro2a()).commit();
-                break;
-            case R.id.ملف_العدد:
-                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,new Mlf_El3dd()).commit();
-                break;
-            case R.id.حوار_العدد:
-                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,new Hwar_El3dd()).commit();
-                break;
-            case R.id.زقزوقة:
-                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,new Z2zo2ah()).commit();
-                break;
-            case R.id.علي_الأصل_دور:
-                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,new Ala_ElAsl_Dwar()).commit();
-                break;
-            case R.id.الكل:
-                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,new ElKol()).commit();
-                break;
-        }
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
 }
