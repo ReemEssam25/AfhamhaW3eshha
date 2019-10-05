@@ -69,8 +69,6 @@ public class ArticleFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 posts.clear();
-                Post post1 =new Post ("rrrrrrr" , "eeeeeeeee,lklkp[spkp" );
-                posts.add(post1);
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()){
                     Post post2 = snapshot.getValue(Post.class);
 
