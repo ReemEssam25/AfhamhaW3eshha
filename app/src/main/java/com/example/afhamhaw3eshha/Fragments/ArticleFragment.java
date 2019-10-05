@@ -25,6 +25,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.example.afhamhaw3eshha.MainActivity.CATEGORY_EXTRA;
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -43,6 +45,11 @@ public class ArticleFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        if(getArguments()!=null){
+           String category= getArguments().getString(CATEGORY_EXTRA);
+
+        }
         View v = inflater.inflate(R.layout.fragment_article, container, false);
 
         recyclerView = v.findViewById(R.id.article_RecycleView);

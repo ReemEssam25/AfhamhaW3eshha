@@ -54,9 +54,17 @@ public class WriteFragment extends Fragment {
 
         spinner = (Spinner)v.findViewById(R.id.spinner);
         List<String> list = new ArrayList<String>();
-        list.add("list 1");
-        list.add("list 2");
-        list.add("list 3");
+        list.add("كبسولات السعادة");
+        list.add("أنت حر");
+        list.add("هن");
+        list.add("أنت ومزاجك");
+        list.add("اسمع غيرك");
+        list.add("اختلاف مش خلاف");
+        list.add("رؤى");
+        list.add("ملف العدد");
+        list.add("حوار العدد");
+        list.add("زقزوقة");
+        list.add("علي الأصل دور");
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_spinner_item, list);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

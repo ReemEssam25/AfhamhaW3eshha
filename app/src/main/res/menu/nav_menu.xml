@@ -9,44 +9,44 @@
        >
 
         <item
-            android:id="@+id/كبسولات_السعادة"
+            android:id="@+id/capsolat_elS3ada"
             android:title="كبسولات السعادة" />
 
         <item
-            android:id="@+id/انت_حر"
-            android:title="انت حر" />
+            android:id="@+id/anta_7or"
+            android:title="أنت حر" />
 
         <item
-            android:id="@+id/هن"
+            android:id="@+id/hunna"
             android:title="هن" />
 
         <item
-            android:id="@+id/انت_ومزاجك"
-            android:title="انت ومزاجك" />
+            android:id="@+id/anta_wMzagk"
+            android:title="أنت ومزاجك" />
         <item
-            android:id="@+id/اسمع_غيرك"
+            android:id="@+id/esm3_8erak"
             android:title="اسمع غيرك" />
         <item
-            android:id="@+id/اختلاف_مش_خلاف"
+            android:id="@+id/e5tlaf_mesh_5laf"
             android:title="اختلاف مش خلاف" />
         <item
-            android:id="@+id/رؤى"
+            android:id="@+id/ro2a"
             android:title="رؤى" />
 
         <item
-            android:id="@+id/ملف_العدد"
+            android:id="@+id/mlf_el3dd"
             android:title="ملف العدد" />
         <item
-            android:id="@+id/حوار_العدد"
+            android:id="@+id/hwar_el3dd"
             android:title="حوار العدد" />
         <item
-            android:id="@+id/زقزوقة"
+            android:id="@+id/za2zo2a"
             android:title="زقزوقة" />
         <item
-            android:id="@+id/علي_الأصل_دور"
+            android:id="@+id/aal_asl_dawr"
             android:title="علي الأصل دور" />
         <item
-            android:id="@+id/الكل"
+            android:id="@+id/elkol"
             android:title="الكل" />
     </group>
 
