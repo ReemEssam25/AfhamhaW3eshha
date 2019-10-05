@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group
+        android:checkableBehavior="single"
+       >
+
+        <item
+            android:id="@+id/كبسولات_السعادة"
+            android:title="كبسولات السعادة" />
+
+        <item
+            android:id="@+id/انت_حر"
+            android:title="انت حر" />
+
+        <item
+            android:id="@+id/هن"
+            android:title="هن" />
+
+        <item
+            android:id="@+id/انت_ومزاجك"
+            android:title="انت ومزاجك" />
+        <item
+            android:id="@+id/اسمع_غيرك"
+            android:title="اسمع غيرك" />
+        <item
+            android:id="@+id/اختلاف_مش_خلاف"
+            android:title="اختلاف مش خلاف" />
+        <item
+            android:id="@+id/رؤى"
+            android:title="رؤى" />
+
+        <item
+            android:id="@+id/ملف_العدد"
+            android:title="ملف العدد" />
+        <item
+            android:id="@+id/حوار_العدد"
+            android:title="حوار العدد" />
+        <item
+            android:id="@+id/زقزوقة"
+            android:title="زقزوقة" />
+        <item
+            android:id="@+id/علي_الأصل_دور"
+            android:title="علي الأصل دور" />
+        <item
+            android:id="@+id/الكل"
+            android:title="الكل" />
+    </group>
+
+</menu>
