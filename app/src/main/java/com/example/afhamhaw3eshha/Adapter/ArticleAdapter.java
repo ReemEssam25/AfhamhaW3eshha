@@ -45,6 +45,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
         post = posts.get(position);
         holder.titleTextView.setText(post.getTitle());
         holder.articleTextView.setText(post.getArticle());
+        holder.userNameTextView.setText(post.getUserName());
     }
 
     @Override
