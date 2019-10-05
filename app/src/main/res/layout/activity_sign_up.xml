@@ -4,39 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LogInActivity"
+    tools:context=".SignUpActivity"
     android:background="@drawable/back"
     >
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/logo"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="150dp"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="افهمهاو عيشها"
-        android:textSize="30dp"
-        android:textColor="@color/white"
-        android:layout_marginTop="260dp"
-        android:layout_marginLeft="120dp"
-        android:gravity="center"
-        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_account_circle_black_24dp" />
 
     <LinearLayout
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="250dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="70dp">
-
+        android:padding="50dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/mail_login_EditText"
+            android:id="@+id/name_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:hint="أسم المستخدم"
+            android:textColor="#fff"
+            app:met_floatingLabel="normal" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mail_EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
@@ -70,21 +66,6 @@
 
 
         <Button
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="هل نسيت كلمة السر؟"
-            android:textColor="@color/orange" />
-
-        <Button
-            android:id="@+id/login_Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_shape"
-            android:text="تسجيل الدخول"
-            android:textColor="@color/white" />
-
-        <Button
             android:layout_marginTop="20dp"
             android:id="@+id/signUp_Button"
             android:layout_width="match_parent"
@@ -94,5 +75,6 @@
             android:textColor="@color/white" />
 
     </LinearLayout>
+
 
 </RelativeLayout>

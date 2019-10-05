@@ -24,6 +24,7 @@ import com.example.afhamhaw3eshha.Fragments.Esm3_8erak;
 import com.example.afhamhaw3eshha.Fragments.Hwar_El3dd;
 import com.example.afhamhaw3eshha.Fragments.Mlf_El3dd;
 import com.example.afhamhaw3eshha.Fragments.Ro2a;
+import com.example.afhamhaw3eshha.Fragments.WriteFragment;
 import com.example.afhamhaw3eshha.Fragments.Z2zo2ah;
 import com.example.afhamhaw3eshha.Fragments.anta7or;
 import com.example.afhamhaw3eshha.Fragments.hapinessCapsols;
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawer;
     NavigationView navigationView;
 
+    Button homeButton , writeButton , aboutButton , profileButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +50,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         frag = new ArticleFragment();
         fT.replace(R.id.container, frag , "any tag");
         fT.commit();
+
+        homeButton = findViewById(R.id.home_Button);
+        writeButton = findViewById(R.id.write_Button);
+        aboutButton = findViewById(R.id.about_Button);
+        profileButton = findViewById(R.id.profile_Button);
+
+
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fM = getSupportFragmentManager();
+                fT = fM.beginTransaction();
+                frag = new ArticleFragment();
+                fT.replace(R.id.container, frag , "any tag");
+                fT.commit();
+            }
+        });
+
+        writeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fM1 = getSupportFragmentManager();
+                FragmentTransaction fT1 = fM1.beginTransaction();
+                frag = new WriteFragment();
+                fT1.replace(R.id.container, frag , "any tag");
+                fT1.commit();
+            }
+        });
+
 
         Button menuBtn = findViewById(R.id.menu_Button);
         menuBtn.setOnClickListener(new View.OnClickListener() {
@@ -65,7 +97,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
 
 
         }
