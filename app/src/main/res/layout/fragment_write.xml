@@ -36,7 +36,7 @@
         android:background="@drawable/edittext_shape"
         android:id="@+id/article_EditText"
         android:layout_width="match_parent"
-        android:layout_height="258dp"
+        android:layout_height="200dp"
         android:hint="المقالة...."
         android:textColorHint="#000"
         android:padding="20dp"

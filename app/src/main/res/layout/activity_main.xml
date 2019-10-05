@@ -30,8 +30,8 @@
             android:id="@+id/toolBar"
             >
             <Button
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="300dp"
                 android:background="@drawable/ic_menu_black_24dp"
                 android:id="@+id/menu_Button"
@@ -48,7 +48,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/real_layout"
-            android:layout_below="@id/bar_layout">
+            android:layout_below="@id/bar_layout"
+            android:background="#F3F0F0"
+            >
 
         </FrameLayout>
 

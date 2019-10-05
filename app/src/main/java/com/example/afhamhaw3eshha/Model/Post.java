@@ -9,31 +9,39 @@ public class Post {
     private String category ;
    // private String userID;
     private String likes;
+    private String userName;
+    private String url;
 
     public Post(){
 
     }
 
-    public Post(String title , String article){
-        this.title = title;
-        this.article = article;
+
+    public String getUserName() {
+        return userName;
     }
-    public Post(String title, String img, String article, String category, String likes , String userID) {
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public Post(String title, String img, String article, String category, String likes, String userName, String url) {
         this.title = title;
         this.img = img;
         this.article = article;
         this.category = category;
         this.likes = likes;
-       // this.userID = userID;
+        this.userName = userName;
+        this.url = url;
     }
-
-   /* public String getUserID() {
-        return userID;
-    }
-
-    public void setUserID(String userID) {
-        this.userID = userID;
-    }*/
 
     public String getCategory() {
         return category;

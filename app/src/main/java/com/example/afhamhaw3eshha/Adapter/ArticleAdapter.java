@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.afhamhaw3eshha.Model.Post;
 import com.example.afhamhaw3eshha.R;
+import com.google.android.material.button.MaterialButton;
 
 import java.util.List;
 
@@ -53,7 +55,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
     class ArticleViewHolder extends RecyclerView.ViewHolder{
 
         private TextView userNameTextView , titleTextView, articleTextView;
-        private Button likeButton, commentButton , seeButton;
+        private ImageButton likeButton, commentButton , seeButton;
         private CircleImageView userImageView;
 
         public ArticleViewHolder(@NonNull View itemView) {

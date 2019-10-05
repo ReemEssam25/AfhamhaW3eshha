@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class LogInActivity extends AppCompatActivity {
@@ -24,6 +25,20 @@ public class LogInActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
     ProgressDialog prog;
+    FirebaseUser firebaseUser;
+
+    protected void onStart() {
+        super.onStart();
+
+        //Check if user is null
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
+        if (firebaseUser != null){
+            Intent intent = new Intent(LogInActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +55,11 @@ public class LogInActivity extends AppCompatActivity {
         prog.setMessage("Wait....");
         prog.setCanceledOnTouchOutside(false);
 
+
+
         auth = FirebaseAuth.getInstance();
+
+
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
